@@ -8,11 +8,11 @@ import { toSignal } from '@angular/core/rxjs-interop'
 export class MyService {
   constructor() {}
 
-  items1: Signal<number[] | null> = toSignal(this.getItems1(), { initialValue: null })
+  items1: Signal<string[] | null> = toSignal(this.getItems1(), { initialValue: null })
   items2: Signal<number[] | null> = toSignal(this.getItems2(), { initialValue: null })
 
-  getItems1(): Observable<number[]> {
-    return of([1,2,3,4,5]).pipe(delay(3000))
+  getItems1(): Observable<string[]> {
+    return of(['Delayed content®']).pipe(delay(3000))
   }
 
   getItems2(): Observable<number[]> {
