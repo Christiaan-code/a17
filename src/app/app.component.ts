@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core'
+import { RouterOutlet } from '@angular/router'
+import { HoldableButtonComponent } from './holdable-button/holdable-button.component'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    HoldableButtonComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

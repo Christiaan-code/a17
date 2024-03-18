@@ -1,0 +1,64 @@
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
+}
+
+.button_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #ff4655;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+  border-radius: 10px;
+}
+
+.button_lg:active {
+  animation: boom 2s;
+}
+
+.button_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #d53542;
+  transform: skew(-15deg);
+  transition: all 1s ease;
+}
+
+.button_text {
+  position: relative;
+}
+
+.button:active .button_sl {
+  width: calc(100% + 10px);
+}
+
+@keyframes boom {
+ 50% {
+  transform: scale(1);
+ }
+
+  60% {
+  transform: scale(1.3);
+ }
+}
+
+
