@@ -1,3 +1,9 @@
+.nerfed {
+  zoom: 0.8;
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
 .gegga {
   width: 0;
 }
@@ -8,10 +14,12 @@
 
 .stopp1 {
   stop-color: #b3d4fc;
+  // stop-color: #b3fcc4;
 }
 
 .stopp2 {
   stop-color: #6793fb;
+  // stop-color: #67fb91;
 }
 
 .halvan {
